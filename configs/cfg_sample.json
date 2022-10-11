@@ -1,0 +1,13 @@
+{
+    "description": "settings for preprocessing (e.g. transformation), input and output directories.",
+    "transformation": "log",
+    "marker_type": "all",
+    "naive_marker_FC": 2.0,
+    "marker_dir": null,
+    "normalization": "mean",
+    "ref_sig_dir": "./input/signatures/pancreas/Baron/Baron",
+    "org_sig_dir": null,
+    "mix_dir": "./input/mixtures/pancreas/seger_d",
+    "org_prop_dir": null,
+    "outdir": "./results/seger_d/Baron"
+}

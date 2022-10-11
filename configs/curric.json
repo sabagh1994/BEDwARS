@@ -1,0 +1,52 @@
+[
+  {
+    "stage_name": "L0",
+    "stage_oper": "init",
+    "stage_args": {"rng_seeds": ["start_step", [12345, 200]],
+                   "model_config": {"tune_interval": 50,
+                                    "props_alpha_distr": "uniform",
+                                    "alpha_lower": 0.0, "alpha_upper": 30.0,
+                                    "sigma_b_distr": "halfcauchy","beta_b": 1.0,
+                                    "sigma_x_distr": "halfcauchy","beta_x": 5.0,
+                                    "eps": 1e-9,"w0_dir": null,"fixed_sigs": false,
+                                    "divide_B": true,"chains": 150
+                                    },
+                   "chain_config": {"W": "default", "sigma_x": "prior", "sigma_b": "default", "alpha": "prior"}
+                  }
+  },{
+    "stage_name": "L1",
+    "stage_oper": "mcmc_repeat",
+    "stage_args": {"init_stage_name": "L0", "mini_stage_repeats": 10,
+                   "mini_stage_name_formatter":"{stage_name}-{mini_stage_idx}",
+                   "mini_stage_args": {"steps": 5000, "after_tune": false,
+                                       "get_stats": true, "log_acc_rate": false,
+                                       "log_var_vals": false, "log_interval": 1000}
+                   }
+  },{
+    "stage_name": "L1_train",
+    "stage_oper": "mcmc_repeat",
+    "stage_args": {"init_stage_name": "L1-9", "mini_stage_repeats": 30,
+                   "mini_stage_name_formatter":"{stage_name}-{mini_stage_idx}",
+                   "mini_stage_args": {"steps": 5000, "after_tune": true,
+                                       "get_stats": true, "log_acc_rate": false,
+                                       "log_var_vals": false, "log_interval": 1000}
+                   }
+  },{
+    "stage_name": "L2",
+    "stage_oper": "sort_subset",
+    "stage_args": {"past_stage_name": "L1_train-29", "sort_criterion": "MSE_marker",
+                   "use_summary":true, "is_transformed": false, "topk": 20,
+                   "extra_dict": {"FCs": [3.0, 4.0, 5.0]},
+                   "chain_inds_range": null
+                   }
+  },{
+    "stage_name": "L3",
+    "stage_oper": "mcmc_repeat",
+    "stage_args": {"init_stage_name": "L2", "mini_stage_repeats": 180,
+                   "mini_stage_name_formatter":"{stage_name}-{mini_stage_idx}",
+                   "mini_stage_args": {"steps": 5000, "after_tune": true,
+                                       "get_stats": true, "log_acc_rate": false,
+                                       "log_var_vals": false, "log_interval": 1000}
+                   }
+  }
+]
