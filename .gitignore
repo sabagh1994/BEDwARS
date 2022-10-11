@@ -1,0 +1,59 @@
+# General Stuff
+*.ipynb_checkpoints*
+**__pycache**
+*.idea*
+
+
+# Project Specific Stuff
+**results**
+configs/*
+!configs/curric.json
+!configs/cfg_sample.json
+!configs/configs.md5
+!configs/download.sh
+input/*
+!input/download.sh
+!input/input.md5
+**joblogs**
+notes
+**logs**
+**submit_files_eshal**
+results_backup_emtab/*
+scripts/test_sample_aggr_ignore.ipynb
+scripts/logs_debug/*
+scripts/dpd_post_analysis.ipynb
+**figures**
+**tables**
+**archiv_code**
+dpd_post_analysis/bulk_CT/*
+dpd_post_analysis/dpd_prop_bs
+dpd_post_analysis/h_prop_bs
+dpd_post_analysis/w_dpd_new_all_dpd_sig_3ex
+dpd_post_analysis/w_h_new_all_dpd_sig_3ex
+**ignore_docs**
+*.sif
+*.swp
+other_methods/transDeconv/*
+**test_runs**
+*cibx_frac.tar
+collect_visualize/estims_collected/*
+collect_visualize/merged_stats/*
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Atom files
+*.ftpconfig
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
