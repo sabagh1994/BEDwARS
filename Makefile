@@ -13,4 +13,5 @@ venv:
 	source venv/bin/activate && python -m pip install torch==1.8.1+cu111 \
 		-f https://download.pytorch.org/whl/torch_stable.html
 	source venv/bin/activate && python -m pip install cupy-cuda111==10.0.0
+	source venv/bin/activate && python -m pip install gdown
 	source venv/bin/activate && python -m pip install -r requirements.txt
