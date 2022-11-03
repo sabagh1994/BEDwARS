@@ -433,8 +433,8 @@ BEDwARS is a Bayesian approach to deconvolving bulk expression profiles using re
 
 ## References
 * The bioRxiv link to the paper:
-  * PDF link: [https://www.biorxiv.org/content/10.1101/2022.10.25.513800v1.full.pdf)
-  * Web-page link: [https://www.biorxiv.org/content/10.1101/2022.10.25.513800v1)
+  * PDF link: https://www.biorxiv.org/content/10.1101/2022.10.25.513800v1.full.pdf
+  * Web-page link: https://www.biorxiv.org/content/10.1101/2022.10.25.513800v1
 
 * Here is the bibtex citation entry for our work:
 ```
