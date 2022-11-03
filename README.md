@@ -429,3 +429,20 @@ BEDwARS is a Bayesian approach to deconvolving bulk expression profiles using re
    
    
 </details>
+
+
+## References
+* The bioRxiv link to the paper:
+  * PDF link: [https://www.biorxiv.org/content/10.1101/2022.10.25.513800v1.full.pdf)
+  * Web-page link: [https://www.biorxiv.org/content/10.1101/2022.10.25.513800v1)
+
+* Here is the bibtex citation entry for our work:
+```
+@article{ghaffari2022robust,
+  title={A Robust Bayesian Approach to Bulk Gene Expression Deconvolution with Noisy Reference Signatures},
+  author={Ghaffari, Saba and Bouchonville, Kelly J and Saleh, Ehsan and Schmidt, Remington E and Offer, Steven M and Sinha, Saurabh},
+  journal={bioRxiv},
+  year={2022},
+  publisher={Cold Spring Harbor Laboratory}
+}
+```
