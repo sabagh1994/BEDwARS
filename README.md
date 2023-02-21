@@ -409,7 +409,7 @@ BEDwARS is a Bayesian approach to deconvolving bulk expression profiles using re
 <summary><h2>Run Time and Memory Requirement</h2></summary>
 
    Run time of BEDwARS depends on the computational complexity and the type of GPU used. 
-   Deconvolving 100 psedu-bulk samples of Segerstolpe T2D (`./input/mixtures/pancreas/emtab_d`) 
+   Deconvolving 100 pseudo-bulk samples of Segerstolpe T2D (`./input/mixtures/pancreas/emtab_d`) 
    using Baron cell type signatures (`./input/signatures/pancreas/Baron/Baron`) and `./configs/curric.json`
    as the curriculum takes ~100 ms per step (~16 hrs in total) on Tesla V100 GPU.
 
