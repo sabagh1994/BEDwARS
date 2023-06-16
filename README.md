@@ -1,4 +1,4 @@
-# BEDwARS: A Robust <ins>B</ins>ayesian Approach to <ins>B</ins>ulk Gene <ins>E</ins>xpression <ins>D</ins>econvolution with Noisy <ins>R</ins>eference <ins>S</ins>ignatures
+# BEDwARS: A Robust <ins>B</ins>ayesian Approach to Bulk Gene <ins>E</ins>xpression <ins>D</ins>econvolution with Noisy <ins>R</ins>eference <ins>S</ins>ignatures
 
 BEDwARS is a Bayesian approach to deconvolving bulk expression profiles using reference expression profiles (“signatures”) of the constituent cell types. It is designed to be robust to “noise” in provided reference signatures that may arise due to biological and/or technical differences from the bulk expression profiles. 
 
