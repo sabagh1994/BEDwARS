@@ -2,6 +2,9 @@
 
 BEDwARS is a Bayesian approach to deconvolving bulk expression profiles using reference expression profiles (“signatures”) of the constituent cell types. It is designed to be robust to “noise” in provided reference signatures that may arise due to biological and/or technical differences from the bulk expression profiles. 
 
+<p align="center">
+   <img width="520" alt="image" src="https://github.com/sabagh1994/BEDwARS/assets/33433428/56d41a4b-2c25-416f-8d87-64a2a05c5fe0">
+</p>
 
 <details open>
 <summary><h2>Guide to BEDwARS</h2></summary>
