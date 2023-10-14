@@ -434,6 +434,14 @@ BEDwARS is a Bayesian approach to deconvolving bulk expression profiles using re
 </details>
 
 
+<details>
+<summary><h2>Application of BEDwARS to DPD deficiency</h2></summary>
+
+   The notebooks to proprocess the single cell data, generate signatures and pseudo-bulk samples are included in `dpd_study` directory. Navigate to `dpd_study` and follow the instuctions for running the notebooks.
+
+</details>
+
+
 ## References
 * Genome Biology link:
   * Web-page link: https://genomebiology.biomedcentral.com/articles/10.1186/s13059-023-03007-7
