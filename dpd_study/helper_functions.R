@@ -1,4 +1,5 @@
-#source('./CIBERSORT.R')
+# this code is taken from  https://github.com/favilaco/deconv_benchmark
+
 options(stringsAsFactors = FALSE)
 
 Normalization <- function(data){
