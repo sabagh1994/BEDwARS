@@ -24,7 +24,8 @@ Data related to DPD analyis should be downloaded first. To download the DPD data
 +  <details>
    <summary><strong>Step 3: Pseudo-Bulk Generation and Batch Correction</strong></summary>
    
-   Run `pseudobulk_batchcorr.ipynb` to generate pseudo-bulk samples from the processed single cell data and perform batch correction for bulk RNA-        seq data stored at `dpd_data/bulk_raw_counts`. The batch corrected bulk RNA-seq samples for affected and non-affected (healthy) groups will be         stored at `dpd_results/bulk_preprocess/dpd_affected` and `dpd_results/bulk_preprocess/dpd_healthy`. These files also exist in the downloaded           input files for running BEDwARS (see BEDwARS README).
+   Run `pseudobulk_batchcorr.ipynb` to generate pseudo-bulk samples from the processed single cell data and perform batch correction for bulk RNA-        seq data stored at `dpd_data/bulk_raw_counts`. The batch corrected bulk RNA-seq samples for affected and non-affected (healthy) groups will be         stored at `dpd_results/bulk_preprocess/dpd_affected` and `dpd_results/bulk_preprocess/dpd_healthy`. These files also exist in the downloaded           input files for running BEDwARS (see BEDwARS README). The bootstrapped pseudo-bulk samples will be stored at
+   `dpd_results/bulk_preprocess/dpd_bulk_bs` (affected) and `dpd_results/bulk_preprocess/h_bulk_bs` (non-affected).
 
    Similar as before, if `adata` of the paper is used in generating the processed single cell data, load data from
    `./dpd_data/sc_preprocess/processed_data/all_proc`. If `adata` is generated from scratch, load data from
