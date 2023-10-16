@@ -32,3 +32,11 @@ Data related to DPD analyis should be downloaded first. To download the DPD data
    `./dpd_results/sc_preprocess/processed_data/all_proc`.
 
    </details>
+
+
++  <details>
+   <summary><strong>Step 4: Differential Gene Expression (DGE) Analysis</strong></summary>
+
+   Run `dge_bulk.ipynb` to perform DGE anlaysis on bulk RNAseq, bootstrapped pseudo bulk, and deconvoluted bulk expression profiles per cell       type for affected (72) vs non-affected (48) samples. The results will be stored at `dpd_results/bulk_DGE/DGE_all`. 
+
+   </details>
