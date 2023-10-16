@@ -17,5 +17,6 @@ Data related to DPD analyis should be downloaded first. To download the DPD data
 +  <details>
    <summary><strong>Signature Generation</strong></summary>
 
+   Run `signature_gen.ipynb` to generate signatures using the processed single cell data. 
    
    </details>
