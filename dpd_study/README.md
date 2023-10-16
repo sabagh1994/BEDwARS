@@ -31,6 +31,8 @@ Data related to DPD analyis should be downloaded first. To download the DPD data
    `./dpd_data/sc_preprocess/processed_data/all_proc`. If `adata` is generated from scratch, load data from
    `./dpd_results/sc_preprocess/processed_data/all_proc`.
 
+   The codes in this notebook are based on the codes by https://github.com/favilaco/deconv_benchmark (Cobos et al.) and https://github.com/Voineagulab/BrainCellularComposition (Sutton et al.). 
+
    </details>
 
 
